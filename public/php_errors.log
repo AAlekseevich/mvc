@@ -1,0 +1,94 @@
+[10-Mar-2020 04:10:29 UTC] PHP Fatal error:  Uncaught Base\Exception\Error404: Class App\Controller\Mvc not exists in /var/www/loftschool/mvc/Base/Application.php:37
+Stack trace:
+#0 /var/www/loftschool/mvc/public/index.php(12): Base\Application->run()
+#1 {main}
+  thrown in /var/www/loftschool/mvc/Base/Application.php on line 37
+[10-Mar-2020 04:43:18 UTC] PHP Fatal error:  Uncaught Base\Exception\Error404: Action index not exists in /var/www/loftschool/mvc/Base/Application.php:44
+Stack trace:
+#0 /var/www/loftschool/mvc/public/index.php(12): Base\Application->run()
+#1 {main}
+  thrown in /var/www/loftschool/mvc/Base/Application.php on line 44
+[10-Mar-2020 04:44:32 UTC] PHP Fatal error:  Uncaught Base\Exception\Error404: Action index not exists in /var/www/loftschool/mvc/Base/Application.php:44
+Stack trace:
+#0 /var/www/loftschool/mvc/public/index.php(12): Base\Application->run()
+#1 {main}
+  thrown in /var/www/loftschool/mvc/Base/Application.php on line 44
+[10-Mar-2020 04:44:33 UTC] PHP Fatal error:  Uncaught Base\Exception\Error404: Action index not exists in /var/www/loftschool/mvc/Base/Application.php:44
+Stack trace:
+#0 /var/www/loftschool/mvc/public/index.php(12): Base\Application->run()
+#1 {main}
+  thrown in /var/www/loftschool/mvc/Base/Application.php on line 44
+[10-Mar-2020 04:44:36 UTC] PHP Fatal error:  Uncaught Base\Exception\Error404: Action index not exists in /var/www/loftschool/mvc/Base/Application.php:44
+Stack trace:
+#0 /var/www/loftschool/mvc/public/index.php(12): Base\Application->run()
+#1 {main}
+  thrown in /var/www/loftschool/mvc/Base/Application.php on line 44
+[10-Mar-2020 04:44:49 UTC] PHP Fatal error:  Uncaught Base\Exception\Error404: Action index not exists in /var/www/loftschool/mvc/Base/Application.php:44
+Stack trace:
+#0 /var/www/loftschool/mvc/public/index.php(12): Base\Application->run()
+#1 {main}
+  thrown in /var/www/loftschool/mvc/Base/Application.php on line 44
+[10-Mar-2020 04:45:18 UTC] PHP Fatal error:  Uncaught Base\Exception\Error404: Action index not exists in /var/www/loftschool/mvc/Base/Application.php:44
+Stack trace:
+#0 /var/www/loftschool/mvc/public/index.php(12): Base\Application->run()
+#1 {main}
+  thrown in /var/www/loftschool/mvc/Base/Application.php on line 44
+[10-Mar-2020 04:45:27 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method Base\Router::getActionToken() in /var/www/loftschool/mvc/Base/Application.php:41
+Stack trace:
+#0 /var/www/loftschool/mvc/public/index.php(12): Base\Application->run()
+#1 {main}
+  thrown in /var/www/loftschool/mvc/Base/Application.php on line 41
+[10-Mar-2020 04:48:16 UTC] PHP Fatal error:  Cannot redeclare Base\Router::getActionToken() in /var/www/loftschool/mvc/Base/Router.php on line 64
+[10-Mar-2020 04:48:16 UTC] PHP Stack trace:
+[10-Mar-2020 04:48:16 UTC] PHP   1. {main}() /var/www/loftschool/mvc/public/index.php:0
+[10-Mar-2020 04:48:16 UTC] PHP   2. Base\Application->run() /var/www/loftschool/mvc/public/index.php:12
+[10-Mar-2020 04:48:16 UTC] PHP   3. Base\Application->init() /var/www/loftschool/mvc/Base/Application.php:31
+[10-Mar-2020 04:48:16 UTC] PHP   4. spl_autoload_call() /var/www/loftschool/mvc/Base/Application.php:21
+[10-Mar-2020 04:48:16 UTC] PHP   5. Composer\Autoload\ClassLoader->loadClass() /var/www/loftschool/mvc/Base/Application.php:21
+[10-Mar-2020 04:48:16 UTC] PHP   6. Composer\Autoload\includeFile() /var/www/loftschool/mvc/vendor/composer/ClassLoader.php:322
+[10-Mar-2020 08:04:35 UTC] PHP Fatal error:  Uncaught Base\Exception\Error404: Class App\Controller\%d0%b0%d1%88%d0%b4%d1%83 not exists in /var/www/loftschool/mvc/Base/Application.php:37
+Stack trace:
+#0 /var/www/loftschool/mvc/public/index.php(12): Base\Application->run()
+#1 {main}
+  thrown in /var/www/loftschool/mvc/Base/Application.php on line 37
+[10-Mar-2020 08:04:43 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method App\Controller\File::isRender() in /var/www/loftschool/mvc/Base/Application.php:54
+Stack trace:
+#0 /var/www/loftschool/mvc/public/index.php(12): Base\Application->run()
+#1 {main}
+  thrown in /var/www/loftschool/mvc/Base/Application.php on line 54
+[10-Mar-2020 10:11:29 UTC] PHP Fatal error:  Uncaught Base\Exception\Error404: Action loginAction not exists in /var/www/loftschool/mvc/Base/Application.php:46
+Stack trace:
+#0 /var/www/loftschool/mvc/public/index.php(12): Base\Application->run()
+#1 {main}
+  thrown in /var/www/loftschool/mvc/Base/Application.php on line 46
+[10-Mar-2020 10:18:31 UTC] PHP Parse error:  syntax error, unexpected '}' in /var/www/loftschool/mvc/Base/Router.php on line 51
+[10-Mar-2020 10:19:07 UTC] PHP Fatal error:  Uncaught Base\Exception\Error404: Action loginAction not exists in /var/www/loftschool/mvc/Base/Application.php:46
+Stack trace:
+#0 /var/www/loftschool/mvc/public/index.php(12): Base\Application->run()
+#1 {main}
+  thrown in /var/www/loftschool/mvc/Base/Application.php on line 46
+[10-Mar-2020 10:21:23 UTC] PHP Fatal error:  Uncaught Base\Exception\Error404: Action loginAction not exists in /var/www/loftschool/mvc/Base/Application.php:46
+Stack trace:
+#0 /var/www/loftschool/mvc/public/index.php(12): Base\Application->run()
+#1 {main}
+  thrown in /var/www/loftschool/mvc/Base/Application.php on line 46
+[10-Mar-2020 10:21:24 UTC] PHP Fatal error:  Uncaught Base\Exception\Error404: Action loginAction not exists in /var/www/loftschool/mvc/Base/Application.php:46
+Stack trace:
+#0 /var/www/loftschool/mvc/public/index.php(12): Base\Application->run()
+#1 {main}
+  thrown in /var/www/loftschool/mvc/Base/Application.php on line 46
+[10-Mar-2020 10:21:25 UTC] PHP Fatal error:  Uncaught Base\Exception\Error404: Action loginAction not exists in /var/www/loftschool/mvc/Base/Application.php:46
+Stack trace:
+#0 /var/www/loftschool/mvc/public/index.php(12): Base\Application->run()
+#1 {main}
+  thrown in /var/www/loftschool/mvc/Base/Application.php on line 46
+[10-Mar-2020 10:22:22 UTC] PHP Fatal error:  Uncaught Base\Exception\Error404: Action loginAction not exists in /var/www/loftschool/mvc/Base/Application.php:46
+Stack trace:
+#0 /var/www/loftschool/mvc/public/index.php(12): Base\Application->run()
+#1 {main}
+  thrown in /var/www/loftschool/mvc/Base/Application.php on line 46
+[10-Mar-2020 10:22:26 UTC] PHP Fatal error:  Uncaught Base\Exception\Error404: Action registerAction not exists in /var/www/loftschool/mvc/Base/Application.php:46
+Stack trace:
+#0 /var/www/loftschool/mvc/public/index.php(12): Base\Application->run()
+#1 {main}
+  thrown in /var/www/loftschool/mvc/Base/Application.php on line 46

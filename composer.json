@@ -1,0 +1,14 @@
+{
+  "require": {
+    "symfony/dom-crawler":"dev-master",
+    "symfony/filesystem":"dev-master",
+    "symfony/css-selector":"dev-master",
+    "vlucas/phpdotenv":"dev-master",
+    "intervention/image":"dev-master",
+    "illuminate/database": "^5.6",
+    "fzaninotto/faker": "dev-master"
+  },
+  "autoload": {
+    "psr-4": {"App\\": "App/", "Base\\": "Base/"}
+  }
+}

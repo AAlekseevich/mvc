@@ -1,0 +1,44 @@
+<?php
+$file = new \App\File\Model\File();
+$photos = $file->photoList($_SESSION['user_id']);
+$user = \Base\Context::getInstance()->getUser();
+?>
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>File page</title>
+</head>
+<body>
+<?php if (empty($user)) {?>
+    <ul>
+        <li><a href="/login">Войти</a></li>
+        <li><a href="/register">Регистрация</a></li>
+    </ul>
+<?php } else { ?>
+<header>
+    <h4>Hello, <?=$user->name?></h4>
+    <ul>
+        <li><a href="/">Главная</a></li>
+        <li><a href="/logout">Выход</a></li>
+    </ul>
+</header>
+<?php } ?>
+<br><br>
+<form action="/file" method="post" enctype="multipart/form-data">
+    <input type="file" name="photo">
+    <input type="submit" value="Upload image">
+</form>
+<br><br>
+<table border="1">
+    <tr><th>Файл</th></tr>
+    <?php foreach ($photos as $photo) { ?>
+        <tr><td><?=$photo->file?></td></tr>
+    <?php } ?>
+</table>
+
+</body>
+</html>

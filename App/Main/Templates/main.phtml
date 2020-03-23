@@ -1,0 +1,55 @@
+<?php
+/** @var \App\User\Model\User $user */
+$user = \Base\Context::getInstance()->getUser();
+?>
+<!doctype html>
+<html lang="ru" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Main</title>
+</head>
+<body>
+<?php if (empty($user)) {?>
+<ul>
+    <li><a href="/login">Войти</a></li>
+    <li><a href="/register">Регистрация</a></li>
+</ul>
+<?php } else { ?>
+<header>
+    <h4>Hello, <?=$user->name?></h4>
+    <ul>
+        <li><a href="/user/create">Создать пользователя</a></li>
+        <li><a href="/file">Загрузить файл</a></li>
+        <li><a href="/fill">Сгенерировать пользователей</a></li>
+        <li><a href="/logout">Выход</a></li>
+    </ul>
+</header>
+    <br><br>
+<table border="1">
+    <tr>
+        <th>Имя</th>
+        <th><a href="/sort"> Возраст </a></th>
+        <th>Статус</th>
+        <th>Редактировать</th>
+        <th>Удалить</th>
+    </tr>
+    <?php
+    if (!empty($user)) {
+        $users = $user->getAllUsers();
+    }
+    foreach ($users as $user) { ?>
+        <tr>
+            <td><?=$user->name?></td>
+            <td><?=$user->age?></td>
+            <td><?=($user->age > 17) ? "Совершеннолетний" : "Несовершеннолетний" ?></td>
+            <td><a href="/user/edit/<?=$user->id?>">Edit</a></td>
+            <td><a href="/user/remove/<?=$user->id?>">Delete</a></td>
+        </tr>
+    <?php } ?>
+</table>
+<?php } ?>
+</body>
+</html>
