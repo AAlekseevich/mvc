@@ -5,7 +5,7 @@
     "symfony/css-selector":"dev-master",
     "vlucas/phpdotenv":"dev-master",
     "intervention/image":"dev-master",
-    "illuminate/database": "^5.6",
+    "illuminate/database": "^6.20",
     "fzaninotto/faker": "dev-master"
   },
   "autoload": {
